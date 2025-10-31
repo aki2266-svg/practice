@@ -1,0 +1,23 @@
+input[type=email]
+{
+    padding: 10px;
+    background-color: brown;
+    width: 400px;
+
+}
+
+input[type=button]
+{
+    background-color: black;
+    padding: 30px;
+    color: antiquewhite;
+}
+a[target=_blank]
+{
+    color: blueviolet;
+    font-family: 'Courier New';
+}
+a
+{
+ color:green;
+}
