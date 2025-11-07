@@ -1,0 +1,86 @@
+.a::first-line
+{
+  color: aquamarine;
+  font-size: 25px;
+  font-weight:900;
+}
+.b::first-letter
+{
+     color: red;
+  font-size: 25px;
+  font-weight:900;
+  text-decoration: dashed;
+}
+.c::before
+{
+    content: "note that this is an example";
+     color: crimson;
+  font-size: 25px;
+  font-weight:900;
+}
+.d::after
+{
+    content:url("download.jfif");
+   /* content: "(^_^)";*/
+    color:gray;
+    font-size: 20px;
+    font-weight: bold;
+}
+.f ul li::marker
+{
+    background-color: rgb(17, 100, 100);
+    color: rgb(103, 63, 205);
+    content: "#";
+}
+.d1 div:nth-child(2)
+{
+    display: inline-block;
+    background-color:darkblue;
+    border: 2px solid rebeccapurple;
+    padding:7px;
+    text-align: center;
+    margin:2px;
+    height:50px;
+    width:50px;
+}
+.d2 span
+{
+  display:block;
+  background-color: blue;
+  color:blueviolet;
+  padding: 10px;
+  margin:5px;
+}
+.container{
+    display: flex;
+    color: cadetblue;
+    background-color: chocolate;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 300px;
+    flex-wrap: wrap-reverse;
+}
+.box
+{
+    background-color: darkcyan;
+    color: blue;
+    text-align: center;
+    padding: 20px;
+    border:2px solid red;
+    width: 150px;
+    
+}
+.box:nth-child(2)
+{
+    order: 1;
+    flex:grow 1 1 300px;
+    background-color: aqua;
+
+}
+#box5
+{
+    position:relative;
+    top:150px;
+    
+}

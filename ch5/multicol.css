@@ -1,0 +1,30 @@
+.news
+{
+    column-count: 4;
+    column-gap: 20px;
+    column-rule-width:8px ;
+    column-rule-color:red ;
+    text-align: justify;
+    column-rule-style: dotted;
+}
+.i1
+{
+    width: 600px;
+    height: auto;
+    border-radius: 50%;
+    background-color: black;
+    padding: 20px;
+    border:solid red;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.i3
+{
+    width: 300px;
+    height:400px;
+    padding:10px;
+    border:1px solid;
+    border-radius: 3px;
+    opacity: 0.1;
+}

@@ -1,0 +1,70 @@
+.container
+{
+    margin-top: 50px 0;
+    height: 800px;
+    border:1px solid red;
+    /*position: ;*/
+}
+.container1
+{
+    height:1000px;
+    border:2px solid red;
+}
+.test
+{
+    margin:0 10px;
+    height:100px;
+    width:100px;
+    text-align: center;
+    font-size: 30px;
+    border:1px solid;
+}
+#test1
+{
+    background-color: navy;
+    top: 50px;
+    right:50px;
+    position: static;
+}
+#test2
+{
+    background-color: red;
+    position:relative;
+    top: 50px;
+    left:50px;
+}
+#test3
+{
+    background-color: navy;
+    position: absolute;
+    top:100px;
+    right:0px;
+}
+#test4
+{
+    background-color: navy;
+    bottom: 50px;
+    right:0px;
+    position: fixed;
+}
+#test5
+{
+    background-color: navy;
+    top: 200px;
+    left:100px;
+    position:sticky
+}
+#test6
+{
+    position: relative;
+    top:150px;
+    background-color: burlywood;
+    left:50px;
+    z-index: 10;
+}
+#test7
+{
+    position: relative;
+    background-color: pink;
+    z-index: 5;
+}

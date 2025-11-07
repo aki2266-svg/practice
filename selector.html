@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            p
+            {
+             color:aqua
+            }
+          #p1
+            {
+             text-align: center;
+             text-decoration: underline;
+            }
+         .p2
+         {
+            font-size: 32px;
+            text-align: right;
+         }
+          h3.p2
+         {
+            font-size: 32px;
+            text-align: left;
+         }
+         p.text-red
+         {
+            color: red;
+         }
+         *
+         {
+            text-align: center;
+            background-color: bisque;
+         }
+         .d1 p
+         {
+          color: red;
+          text-align: right;
+         }
+         .d1>p
+         {
+          color: green;
+          text-align: right;
+         }
+        </style>
+
+    </head>
+    <body>
+        <p id="p1">paragraph 1</p>
+        <p class="p2 text-red">paragraph</p>
+        <h3 class="text-red">heading</h3>
+        <h4 class="p2">heading</h4>
+        <div class="d1">
+            <p>para</p>
+            <div class="d2">
+                <p>para</p>
+            </div>
+            <p>para</p>
+        </div>
+        <p>outside para</p>
+    </body>
+</html>
