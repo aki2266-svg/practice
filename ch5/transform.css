@@ -1,4 +1,4 @@
-.d1
+/* .d1
 {
     height: 200px;
     width: 200px;
@@ -75,7 +75,6 @@
     animation-delay: 0ms;
     animation-iteration-count: 10;
     animation-direction: normal;
-    an
 }
 @keyframes forwards
 {
@@ -85,4 +84,62 @@
     to {
         color: blue;
     }
+} */
+.d4
+{
+    border-radius: 50%;
+    border-color: red;
+    border-width: 3px;
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    /* animation:abc 20s 2s ease-in infinite normal; */
+    animation-name: abc;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    background-color: black;
+    padding: 20px;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes abc
+{
+    0%{
+        background-color: aqua;
+        top: 0%;
+        left:0%;
+        
+    }
+    20%
+    {
+        background-color: blueviolet;
+        height: 100px;
+        top:50%;
+        left:10%
+    }
+    40%
+    {
+        background-color: rgb(56, 213, 77);
+      top:50%;
+        left:30%
+    }
+     60%
+    {
+        background-color: rgb(130, 31, 187);
+        top:50%;
+        left:30%
+    }
+     80%
+    {
+        background-color: rgb(80, 41, 44);
+      top:50%;
+        left:30%
+    }
+    100% {
+         background-color: blue;
+       top:50%;
+        left:30%
+        }
 }

@@ -1,0 +1,31 @@
+.linear
+{
+ 
+ background-color: palevioletred;
+ width: 200px;
+ height:200px;
+ margin: 30px auto;
+ position:relative;
+ background-image: linear-gradient(to right bottom,purple 10%,pink 20%,black 30%,red 40%,green 50%,brown 60%);
+ font-size: 70px;
+ text-align: center;
+ color: transparent;
+ background-clip: text;
+ box-shadow: 10px 10px 20px rebeccapurple;
+}
+.radial{
+ background-color: palevioletred;
+ width: 200px;
+ height:200px;
+ margin: 30px auto;
+ position:relative;
+ background: radial-gradient(red,green,blue);
+ }
+ .conic{
+ background-color: palevioletred;
+ width: 200px;
+ height:200px;
+ margin: 30px auto;
+ position:relative;
+ background:conic-gradient(red 60deg,green 140deg,blue 20deg);
+ }

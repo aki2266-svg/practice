@@ -1,0 +1,24 @@
+.t{
+    display: flex;
+    
+}
+.nav{background-color: blanchedalmond; width: 40%; padding: 10px;}
+section{ background-color: pink; width:60%;padding:10px;}
+.i2{display:none;}
+@media (max-width:500px){
+    .t{flex-direction: column;}
+    nav,section{width: 100%;}
+    nav{order: -1;}
+    .i2{display:block;}
+    .i1{display:none;}
+}
+.conic{
+    background-color: aliceblue;
+ width: 200px;
+ height:200px;
+ margin: 30px auto;
+ position:relative;
+ border-radius: 50%;
+ background: conic-gradient(from 90deg,red 0deg 45deg, green 45deg 90deg,blue 90deg 180deg, yellow 180deg 315deg, pink 315deg 360deg);
+
+ }

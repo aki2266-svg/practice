@@ -1,0 +1,44 @@
+:root
+{
+    --textblue:blue;
+    --all:solid dotted doule dashed;
+    --a:centre;
+    --textred:red;
+}
+h1
+{
+    --a:right;
+    text-align: var(--a);
+    color:var(--textblue);
+    --fs:50px;
+    font-size:var(--fs);
+}
+h2
+{
+    font-size: var(--fs);
+    color: var(--textred);
+    text-align: var(--a);
+}
+h3
+{
+ border-style: var(--all);
+ --p:20px;
+ padding: var(--p);
+ border-width: 8px;
+ text-align: var(--a);
+}
+    /* body{background-color: lightblue;}
+    h4{font-size: 60px; color: coral;}
+    @media screen and (min-width:400px) and (max-width:800px){
+        body{border-color: pink;}
+        h4{font-size: 40px; color: aqua;}
+    }
+    @media (max-width:400px){
+         body{border-color: yellow;}
+        h4{font-size: 20px; color: green;}
+    } */
+  body{background-color: rgb(226, 29, 209);}
+    h4{ color: rgb(96, 35, 238);}
+    @media not (orientation: landscape){
+        body{background-color: pink;}
+        h4{ color: aqua;}}
