@@ -1,0 +1,1 @@
+['Welcome to LJIET\n', 'This is python lecture\n', 'we are in B9 batch \n', 'excelent students in our batch']['Welcome to LJIET\n', 'This is python lecture\n', 'we are in B9 batch \n', 'excelent students in our batch']
