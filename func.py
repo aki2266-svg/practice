@@ -1,0 +1,12 @@
+def lenght(s):
+    return len(s)
+def upper(s):
+    return s.upper()
+def lower(s):
+    return s.lower()
+def capital(s):
+    return s.capitalize()
+def isupper(s):
+    return s.isupper()
+def islower(s):
+    return s.islower()
