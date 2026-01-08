@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function warn(){
+            alert("This is warning message");
+            
+
+        }
+        function b(){
+            var res=confirm("This is confirm message");
+           if(res==true){
+            alert("yes");
+            return true
+           }
+           else{alert ("no")
+        return false}
+        }
+        function a(){
+            var res1=prompt("This is confirm message");
+           if(res1=="yes"){
+            alert("yes");
+            return true
+           }
+           else{alert ("no")
+        return false}
+            
+        }
+    </script>
+</body>
+<input type="button" value="ok" onclick="warn()">
+<input type="button" value="confirm" onclick="b()">
+<button onclick="a()">alert</button>
+</html>                               

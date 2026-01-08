@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun(){
+            //var o=document.f1.t1.value
+           // var o=documents.forms["f1"]["t1"].value
+            var o=document.getElementById("i1").value
+            alert(o)
+            var f=document.forms["f1"]
+            alert(f.lenght)
+            var e1=document.f1.e1.value
+            if(e1.lenght===0){
+                alert("invalid")
+            }else{alert (e1)}
+        }
+    </script>
+    <form onsubmit="fun()" name="f1">
+    <input name="t1" id="i1">
+    <input type="email" name="e1" id="e1">
+    <input type="submit">
+
+    </form>
+</body>
+</html>

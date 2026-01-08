@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+
+</head>
+<body>
+    <script src="javascript">
+       function abc(){
+        document.write("hello")
+       }
+       abc()
+       (function (){
+        document.write("test")
+       }())
+       function mul(a,b){
+         console.log(a*b)
+       }
+       mul(5,4)
+       function sub(p,q){
+        console.log(p-q)
+       }
+       sub(5,3)
+       function dt(fn,ln){
+        document.write("<h1>"+fn+""+ln+"</h1>");
+       }
+       var i=function(a){
+        return a
+       }
+       var print=i("lju")
+       document.write("welcome to"+print)
+       function data(x,y){
+        var p=x/y
+        return p
+       }
+       function output(){
+        var a=data(10,2)
+        document.write(a)
+       }
+       let msg="hello"
+       let msg1='hello template'
+       let a="abc"
+       let out="hello"+"!";
+       let out1=`hello ${a}!`;
+       console.log(msg,msg1)
+       console.log(`normal:${out} TL:${out1}` )
+       var m="hello \n world";
+       var n="hello B9 students"
+       var o=`Template literal topic`
+       console.log(m,n);
+       console.log(o)
+       var n="<h1>hello</h1><p>test</p>"
+       var p=2
+       var q=6
+       console.log(`Add ${p+q}`)
+       
+ </script>
+    <button onclick= "dt ('ABC','xyz')">click here</button>
+</body>
+</html>

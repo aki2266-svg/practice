@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <p id="p1">hello</p>
+    <h3 id="head1">heading 3</h3>
+    <img src="1.png" id="i1">
+    <a href="https://www.wikipedia.com" id="link1">link</a>
+    <h3 title="Dom" id="head2">heading 3</h3>
+     <button onclick="my()">Manipulation</button>
+     <p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nostrum commodi, vel numquam eveniet, labore magni laboriosam mollitia exercitationem perspiciatis minus excepturi. Quis, nihil voluptates odio pariatur magni cumque tempore.</p>
+     <p onclick="handel(this)">Hello</p>
+     <h1 onmouseover='this.style.color="red"; this.innerHTML="Mouseover"'>Hello Everyone!</h1>
+ 
+     <script>
+        function my(){
+            document.getElementById("p1").innerHTML="<b><i>Thank you</i></b>"
+            document.getElementById("head1").innerHTML="<i>Hi</i>"
+            document.getElementById("i1").setAttribute('src',"1.png")
+            var b= document.getElementById("link1").getAttribute("href")
+            console.log(b)
+            document.getElementById("head2").removeAttribute("title")
+            document.getElementById("p2").style.color="blue"
+            var d=document.getElementById("p2")
+            d.style.textTransform="uppercase";
+            d.style.border="5px solid red"
+            document.getElementById("i1").setAttribute("src","images.jfif")
+            var c=document.querySelectorAll(".p2")
+            for (var c1 of c){
+                c1.innerHTML="<i>Test</i>"
+                a1.style.textDecoration="underline"
+            }
+        }
+            function handel(x){
+                x.innerHTML="Mouse clicked"
+            }
+            function mup(){
+                var f=document.getElementById("d1")
+                f.style.border="30px solid blue"
+                f.style.backgroundColor="black";
+                f.style.color="yellow"
+            }
+            function mdown(){
+                var f=document.getElementById('d1')
+                f.style.border="7px solid black"
+                f.style.backgroundColor="white";
+                f.style.color="green"
+                f.innerHTML="mousedown"
+            }
+      
+    </script>
+       
+        <div onmousedown="mdown()";
+        onmouseup="mup()" id="d1" style="padding:20px;color: azure;background-color: black;">mouseup/dowm</div>
+        <div onmouseover="mover(this)" onmouseout="mout(this)" 
+        style="padding:20px;color: yellow;">mouseout/over</div>
+</body>
+</html>

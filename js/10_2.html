@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //asynchronus js syntax
+        // let promise=new Promise((resolve,reject)=>{
+        //     let success=true
+        //     setTimeout(()=>{
+        //     if (success){resolve("r");}
+        //     else{reject("err");}
+        // },3000)})
+        // promise
+        //        .then(r=>console.log(r))
+        //        .catch(err=>console.log(err))
+        //        .finally(()=>console.log("finish"))
+     function fetchdata(){
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                let success=true
+                if (success){resolve("Data received")}
+                else{reject("error. no data")}
+            },2000)
+        })
+     }
+     async function getdata(){
+        try{let res=await fetchdata()
+        console.log(res)}
+        catch(e){console.log(e)}
+     }
+     getdata()
+        
+      
+    </script>
+</body>
+</html>

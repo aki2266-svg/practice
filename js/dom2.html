@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onkeydown="kd(this)" onkeyup="ku(this)">
+    <script>
+     function myform(){
+        var u=document.getElementById("f1").value
+        var e=document.getElementById("f2").value
+        alert('welcome ${u}.email is {e}')  
+    }
+    function oc(x){
+        x.style.color="blue"
+    }
+    function of(x){
+        x.style.backgroundColor="pink"
+    }
+    function ob(x){
+        x.value=x.value.toUpperCase()
+    }
+    function oi(x){
+        x.style.color="red"
+        x.style.textTransformation="uppercase"
+    }
+    function kd(i){
+        i.style.backgroundColor="lightblue"
+    }
+    function ku(i){
+        i.style.backgroundColor="green"
+    }
+    function form1(e){
+        e.preventDefault()
+        alert(`thank you.Event Type is ${e.type}`)
+    }
+    function oc1(x){
+    var v=x.target.value
+    alert(`value is ${v} and type is ${e.type}`)
+    }
+    function show1(x){
+        alert(`color is ${x.target.value}`)
+    }
+
+    </script>
+    <form onsubmit="myform()">
+    <input type="text" onchange="oc(this)" onfocus="of(this)" value="xyz" id="f1">
+    <input type="email" onblur="ob(this)" oninput="oi(this)" id="f2">
+    <input type="submit" value="submit">
+    </form>
+    <form onsubmit="form1(event)">
+    <input onchange="oc1(event)">
+    <select onchange="show1(event)">
+    <option value="pink">pink</option>
+    <option value="blue">blue</option>
+    </select>
+    <input type="submit" value="submit">
+    </form>
+    
+</body>
+</html>

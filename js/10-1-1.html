@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="fun()" name="f1">
+        <input type="text" name="t1" id="i1">
+        <input type="email" name="e1" id="i2">
+        <input type="submit">
+    </form>
+    <form >
+        <input type="text" id="i3">
+        <input type="submit" onclick="fun1()">
+    </form>
+    <script>
+        function fun(){
+            // var o=document.f1.t1.value;
+            // var o=document.forms['f1']['t1'].value;
+            var o=document.getElementById('i1').value;
+            alert(o);
+            var f=document.forms['f1'];
+            alert(f.length);
+            var e1=document.f1.e1.value;
+            if(e1.length===0){
+                alert("invalid");
+            }
+            else{alert(e1);}
+        }
+        function fun1(){
+            var p=/^[a-z]{5,}$/i;//i means insensitive
+            var u=document.getElementById('i3').value;
+            if (p.test(u)){
+                alert('valid');
+            }
+            else{alert('invalid')}
+        }
+
+    </script>
+</body>
+</html>

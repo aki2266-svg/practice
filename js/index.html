@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script language="javascript">
+        // var a=5;
+        // var b=10;
+        // var a=15;
+        //console.log(a+b);
+        //     var a=20;
+        //  function abc(){
+        //     var a=10;
+        //     document.write(a)
+        //  }
+        //  abc();
+        //  document.write(a)
+        let a = 5;
+        let b = 10;
+        var d = [{ name: "abc", age: 20 }, { name: "pqr", age: 30, city: "AHM" }]
+        console.log(d[0]["name"], d[1]["city"])
+        document.write(JSON.stringify(d))
+        let m = 0;
+        if (m > 20) {
+            console.log("very good")
+        }
+        else if (m >= 9) {
+            console.log("chale")
+        }
+        else {
+            console.log("rahi gyu taru")
+        }
+        let role = "admin"
+        switch (role) {
+            case "admin":
+                console.log("admin access")
+                break;
+            case "editor":
+                console.log("editor access")
+                break;
+            case "reader":
+                console.log("read only access")
+                break;
+            default:
+                console.log("na male")
+                break;
+        }
+        let age = 15
+        var res = age >= 18 ? "adult" : "minor";
+        console.log(res)
+
+        for (i = 0; i <= 5; i++) {
+            console.log(i)
+        }
+        let p = 1;
+        while (p <= 5) {
+            console.log(p);
+            p++;
+        }
+        var fruits = ["a", "b", "c"]
+        for (f of fruits) {
+            console.log(f)
+        }
+        var fruits = ["a", "b", "c"]
+        for (f in fruits) {
+            console.log(fruits[f])
+        }
+        var names = ["abc", "xyz", "pqr"]
+        var res = names.push("mno")
+        console.log(res)
+        console.log(names)
+        var r = names.pop();
+        console.log(r)
+        console.log(name)
+        var arr = [1, 2, 3, 4, 5]
+        var r1 = arr.map(a => a * 2);
+        console.log(r1)
+        let r2 = arr.find(a => a < 3)
+        console.log(r2)
+        let r3 = arr.filter(a => a < 3)
+        console.log(r3)
+        var arr1=[{name:"abc",id:10},{name:"xyz",id:20},{name:"pqr",id:30}]
+        var r4=arr1.find(id=>id.id===20)
+        console.log(r4)
+        names.forEach(n=>{
+            console.log("hello"+n)
+        })
+    </script>
+</body>
+
+</html>
